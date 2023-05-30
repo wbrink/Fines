@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Fines.Model;
 
+[Table("FineTypes")]
 public class FineType
 {
     public int FineTypeID { get; set; }

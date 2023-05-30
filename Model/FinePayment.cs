@@ -1,5 +1,7 @@
-namespace Fines.Model;
+using System.ComponentModel.DataAnnotations.Schema;
 
+namespace Fines.Model;
+[Table("FinePayment")]
 public class FinePayment
 {
     public int FinePaymentID { get; set; }
@@ -7,5 +9,5 @@ public class FinePayment
     public DateTime FinePaymentDate { get; set; }
     public int FinePaymentAmount { get; set; }
 
-    
+
 }

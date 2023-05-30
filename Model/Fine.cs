@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Fines.Model;
 
+[Table("Fines")]
 public class Fine
 {
     public int FineID { get; set; }

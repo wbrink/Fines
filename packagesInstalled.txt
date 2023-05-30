@@ -1,1 +1,5 @@
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+
+// Notes about Sql Server Express connection strings
+Server=ComputerName\SQLEXPRESS;Database=databasename;TrusServerCertificate=True;Trusted_Connnection=True;

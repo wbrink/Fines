@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Fines.Model;
 
+[Table("Users")]
 public class User 
 {
    public int UserID { get; set; }

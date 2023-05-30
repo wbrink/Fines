@@ -1,15 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using Fines.DB;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+
 // add db context
-builder.Services.AddDbContext<ApplicationDBContext>(
-    options => options.UseSqlServer("connectionstring")
+builder.Services.AddDbContext<ApplicationDbContext>(
+    options => options.UseSqlServer(Environment.GetEnvironmentVariable("SQLExpressConnectionString"))
 );
+    
+
 
 var app = builder.Build();
 
